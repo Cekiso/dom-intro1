@@ -1,5 +1,6 @@
 var calculateBtn = document.querySelector(".calculateBtn");
 //get a reference to the calculate button
+
 var billTotalElement = document.querySelector(".billTotal");
 //get a reference to the billTotal element
 var billStringElement = document.querySelector(".billString");
@@ -25,6 +26,7 @@ function calculateBtnClicked() {
         var billItem = billItems[i].trim();
         if (billItem === "call") {
             billTotal += 2.75;
+
         } else if (billItem === "sms") {
             billTotal += 0.75;
         }
