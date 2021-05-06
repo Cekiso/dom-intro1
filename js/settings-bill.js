@@ -67,7 +67,7 @@ function color() {
     } else if (total1 >= warningLevelSettingRef && total1 < criticalLevelSettingRef) {
         totalSettings.classList.remove("danger");
         totalSettings.classList.add("warning");
-    } else if (total1 >= criticalLevelSettingRef) {
+    } else if (total1 <= criticalLevelSettingRef) {
         totalSettings.classList.add("danger")
         totalSettings.classList.remove("warning")
     }
